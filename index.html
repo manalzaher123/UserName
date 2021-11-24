@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Web Sits Design</title>
+
+    <script>
+        function validateform(){
+            username= document.forms["login"]["username"].value;
+            password= document.forms["login"]["password"].value;
+
+            if(username=="" && password ==""){
+                alert("insert user name and password");
+            }
+            else if(username=="manal" && password =="77557363")
+            {
+                alert("Welcom Manal");
+            }
+            else {
+                alert("Wrong user name and password");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+   
+        <center>
+            <form name="login" onsubmit="return validateform()" action="index.html" >
+                <h2>Login</h2>
+                <input type="text" placeholder="Your Name" name="username">
+                  <br><br>
+                <input type="password" placeholder="password" name="password">
+                <br><br>
+                <input type="checkbox"  name="checkbox" id="remember">  Remember me 
+                <br><br>
+                <input type="submit"  name="button" value="login">
+            </form>
+        </center>
+      
+  
+</body>
+</html>
